@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sticky notes</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+   
+    <div class="intro">
+        <h1 class="logo-header">
+        <span class="logo">Sticky</span><span class="logo">Notes.</span>
+        </h1>
+    </div>
+    <div id="heading">
+    <header>
+      <h4>StickyNotes.</h4>
+      <p id="ts">By Priyanka Malikar</p>     
+    </header> 
+    </div>    
+    <script src="app.js"></script>  
+    
+    <div class="clock">
+        <div class="outer-clock-face">
+          <div class="marking marking-one"></div>
+          <div class="marking marking-two"></div>
+          <div class="marking marking-three"></div>
+          <div class="marking marking-four"></div>
+          <div class="inner-clock-face">
+            <div class="hand hour-hand"></div>
+            <div class="hand min-hand"></div>
+            <div class="hand second-hand"></div>
+          </div>
+        </div>
+      </div>  
+    <div id="form">
+      <form id="inputForm">
+        <input 
+          type="text"
+          class="inputText"
+          name="textvalue"       
+          placeholder="Note Title"
+          id="note-title-input"
+          autocomplete="off"
+          autofocus
+        />
+        <textarea class="inputTextarea" id="note-content-input" type="text" rows="5" cols="50" maxlength="50" autocomplete="off" placeholder="Type your Note Content here..."  autofocus></textarea>
+        
+        <button type="submit" class="btn">
+          Make a Note 
+        </button>
+      </form>
+    </div>
+   
+    <div id="no-notes-found"> 
+     <h3 class="text">No Notes Found here yet!</h3> 
+     <marquee direction="up" width="250" height="200" behavior="alternate">
+     <marquee behavior="alternate">
+     <img class="img" src="image/not-found.jpg" alt="note not found...!">
+     </marquee>
+     </marquee>    
+   </div>    
+    <ul id="note"></ul>
+    <script src="myscripts.js"></script>
+  </body>
+</html>
